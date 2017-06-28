@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
 	height: 100%;
 }
@@ -10,16 +16,16 @@ body {
 }
 
 .container {
-	transform: rotate(45deg) translate3d(-4vw, 13vw, 0);
-	width: 100%;
+	transform: rotate(90deg) translate3d(13vh, 73vw, 0);
+	width: 100vh;
 }
 
 .poppy-image{
 	position: absolute;
 	border-radius: 100%;
-	left: 65%;
-	height: 350px;
-	width: 350px;
+	left: 30%;
+	height: 250px;
+	width: 250px;
 }
 
 a {
@@ -27,7 +33,7 @@ a {
 }
 
 h1 {
-	font-size:7vw;
+	font-size: 6vw;
 	width: 100%;
 }
 
@@ -56,4 +62,33 @@ h1 {
 }
 .line5 {
 	background-color: #8100FF;
+}
+
+@media screen and (min-width: 420px) {
+	.container {
+		transform: rotate(90deg) translate3d(23vh, 31vw, 0);
+	}
+
+	.poppy-image {
+		left: 48%;
+		height: 350px;
+		width: 350px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size:  7vw;
+	}
+
+	.container {
+		transform: rotate(45deg) translate3d(-4vw, 13vw, 0);
+		width: 100%;
+	}
+
+	.poppy-image {
+		left: 65%;
+		height: 350px;
+		width: 350px;
+	}
 }
